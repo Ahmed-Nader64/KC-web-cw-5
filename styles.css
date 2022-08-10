@@ -1,0 +1,53 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Changa', sans-serif;
+    background-color: rgb(217, 254, 254);
+    
+}
+
+h1{
+    text-shadow: 1px 1px 5px rgba(176, 176, 176, 0.5);
+    margin-bottom: 45px;
+    font-size: 0px;
+    animation-name: anim;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes anim{
+    0% {background-color: teal; color: #5fffff;}
+    90% {background-color: #5fffff; color: teal;}
+    100% {font-size: 35px;}
+  }
+  
+  .container{
+      width: 460px;
+      display: flex;
+      flex-wrap:wrap;
+      background-color: rgb(1, 83, 83);
+      border-radius: 800px;
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    margin: 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Changa', sans-serif;
+    border-radius: 80px;
+    font-size:100px;
+    text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.900);
+    color: white;
+    background-color: rgb(0, 180, 180);
+}
+
+.box:hover{
+    background-color: rgba(0, 128, 128, 0.897);
+    font-size: 110px;
+}
